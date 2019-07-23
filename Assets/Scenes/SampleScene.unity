@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 53400277}
   - component: {fileID: 53400278}
   - component: {fileID: 53400280}
-  - component: {fileID: 53400279}
   - component: {fileID: 53400281}
+  - component: {fileID: 53400279}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -234,7 +234,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53400275}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4d30163a050bee498cf2bfd84cf5707, type: 3}
@@ -332,7 +332,7 @@ BoxCollider:
   m_GameObject: {fileID: 53400275}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -591,7 +591,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 130a14e7bcfb2c64597aad6f32ccb43a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ae4f47690a5068d43b9d7feac55c86c4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1494,7 +1494,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683400759}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 62c52b792facf6c459077064a8e41c31, type: 3}
@@ -2924,16 +2924,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Max Caulfield (Butterfly)
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 2d6cf3111f138804a9d1d46b7a0931d5, type: 2}
-    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7fabbdd51daeb344089fc65e3526cfa0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3003,6 +2993,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2d6cf3111f138804a9d1d46b7a0931d5, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fabbdd51daeb344089fc65e3526cfa0, type: 3}
@@ -3173,7 +3173,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490921752}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4bbc1f60350d4bb43b914ca5c1c94391, type: 3}
@@ -4549,16 +4549,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clementine (Episode 1 Flashback Capless)
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 0dc157cbca532ba41a7ab70a6fdacf4a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 0dc157cbca532ba41a7ab70a6fdacf4a,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b703e77c5030e8e4eb5f2167f3cb3c94, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0dc157cbca532ba41a7ab70a6fdacf4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4629,6 +4619,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1764706
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 0dc157cbca532ba41a7ab70a6fdacf4a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 0dc157cbca532ba41a7ab70a6fdacf4a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b703e77c5030e8e4eb5f2167f3cb3c94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dc157cbca532ba41a7ab70a6fdacf4a, type: 3}
 --- !u!1001 &2139635858
@@ -4646,7 +4646,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c1a44045623ebc048a6efbd98d264a93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c1a44045623ebc048a6efbd98d264a93,
         type: 3}
