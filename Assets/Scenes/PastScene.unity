@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1686901581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a4157211fcef2d48945d8065c5da11a, type: 3}
+  m_Script: {fileID: 11500000, guid: 84de3296381afd744a0f25152a999e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1940781886
@@ -1142,10 +1142,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1940781888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 163b4506e58b93441969a5d2d65fa8d5, type: 3}
+  m_Script: {fileID: 11500000, guid: cd6f58e6759657b40a327dde919f60d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maincam: {fileID: 1686901585}
+  maincam: {fileID: 0}
 --- !u!21 &2048779163
 Material:
   serializedVersion: 6
