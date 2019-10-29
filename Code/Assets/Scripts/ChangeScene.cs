@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    /*
+    
     public void NextScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-    }*/
+    }
 
     //TS
 
@@ -21,13 +21,13 @@ public class ChangeScene : MonoBehaviour
     private void Update()
     {
         //probably completely fucking wrong, but who cares for now x)
-        if(cameraTransform.rotation.eulerAngles.z >= 180)
-        {
-            NextScene();
-        }
+        //if(cameraTransform.rotation.eulerAngles.z >= 180)
+       // {
+       //     NextScene();
+      //  }
     }
 
-    private void NextScene()
+    private void TestNextScene()
     {
         Scene scene = SceneManager.GetActiveScene();
 
