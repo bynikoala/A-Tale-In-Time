@@ -1242,11 +1242,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 419371730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09bb53cb1497a8e418023d9bb3a5cdcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2eb8f3691be821343a735c0bfef38e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   loadIcon: {fileID: 929484297}
-  waitTime: 5
+  waitTime: 0
 --- !u!4 &419371732
 Transform:
   m_ObjectHideFlags: 0
@@ -2009,7 +2009,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b7a55135329cde941a23dfe5746c06f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a808e806af547ad40a589070b47b6fe6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
