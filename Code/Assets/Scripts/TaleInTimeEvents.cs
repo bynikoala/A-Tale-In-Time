@@ -1,15 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class TaleInTimeEvents : MonoBehaviour
 {
-    public Image loadIcon;
+    public Image blackOverlay;
     public float waitTime;
+
+    public RawImage rawImage;
+    public VideoPlayer logoVideoPlayer;
 
     private float timer;
     private bool eventLock;
+    private float currentOverlayAlpha;
+    private bool startOverlayBrightening;
 
 
     // Start is called before the first frame update
@@ -18,6 +25,8 @@ public class TaleInTimeEvents : MonoBehaviour
         waitTime = 4.0f;
         timer = 0.0f;
         eventLock = false;
+        startOverlayBrightening = false;
+        logoVideoPlayer.Prepare();
     }
 
     // Update is called once per frame
@@ -30,12 +39,13 @@ public class TaleInTimeEvents : MonoBehaviour
                 Debug.Log("Wait Completed");
                 ActivateTarget();
                 timer = 0.0f;
-                //Animation for successful activation
+                PlayLoadingIcon();
                 eventLock = true;
             }
             else
             {
                 timer += Time.deltaTime;
+                DarkenOverlay();
             }
         }
         else
@@ -43,18 +53,53 @@ public class TaleInTimeEvents : MonoBehaviour
             timer = 0.0f;
         }
 
+        if (startOverlayBrightening)
+        {
+            BrightenOverlay();
+        }
 
-        DrawLoadingIcon();
+        DrawOverlay();
     }
 
     public void UnlockEvents()
     {
         eventLock = false;
+        startOverlayBrightening = true;
     }
 
-    public void DrawLoadingIcon()
+    public void BrightenOverlay()
     {
-        loadIcon.fillAmount = timer / waitTime;
+        if (currentOverlayAlpha > 0)
+        {
+            currentOverlayAlpha = (int)currentOverlayAlpha - 2;
+            return;
+        }
+        else
+        {
+            startOverlayBrightening = false;
+        }
+    }
+
+    public void DarkenOverlay()
+    {
+        currentOverlayAlpha = timer / waitTime * 200;
+    }
+
+    public void DrawOverlay()
+    {
+        if (eventLock)
+        {
+            blackOverlay.color = new Color32(0, 0, 0, 200);
+        }
+        else
+        {
+            blackOverlay.color = new Color32(0, 0, 0, Convert.ToByte(currentOverlayAlpha));
+        }
+    }
+    public void PlayLoadingIcon()
+    {
+        rawImage.texture = logoVideoPlayer.texture;
+        logoVideoPlayer.Play();
     }
 
     private void ActivateTarget()
