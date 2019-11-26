@@ -51,6 +51,7 @@ public class TaleInTimeEvents : MonoBehaviour
         else
         {
             timer = 0.0f;
+            startOverlayBrightening = true;
         }
 
         if (startOverlayBrightening)
@@ -71,7 +72,7 @@ public class TaleInTimeEvents : MonoBehaviour
     {
         if (currentOverlayAlpha > 0)
         {
-            currentOverlayAlpha = (int)currentOverlayAlpha - 2;
+            currentOverlayAlpha = (int)currentOverlayAlpha - 1;
             return;
         }
         else
