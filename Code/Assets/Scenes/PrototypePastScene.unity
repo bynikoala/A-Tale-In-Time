@@ -497,7 +497,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 69c99c07e6512f84783822c14558aa2b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 34dc72c0a2b0c8a4d81d1113a95a49bf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1082,8 +1082,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eb8f3691be821343a735c0bfef38e21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadIcon: {fileID: 929484297}
+  blackOverlay: {fileID: 0}
   waitTime: 0
+  rawImage: {fileID: 0}
+  logoVideoPlayer: {fileID: 0}
 --- !u!4 &419371732
 Transform:
   m_ObjectHideFlags: 0
@@ -2799,7 +2801,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 036bf066e09e01348ade6667f5b7e1c3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d3e42d9f21ee6094fabbbb3a7affad54, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4529,7 +4531,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: af887384d0e864b4797bb077401d10c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 169e79bde95fb7e4ea3cdc71d2430c96, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

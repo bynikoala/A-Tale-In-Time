@@ -799,7 +799,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 11ed8e66ba91d90488ba3281238822a7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb9fe891523362f4eb4bc4e45143965a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1017,7 +1017,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9aa5b8053642e3142a2866911f286282, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb437160f4f7b8d489a08f803cfeeb5b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1164,7 +1164,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d78626af8756ccc4da3ca245eed6359e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c013c9ddd026dba4ba3447b788488df8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2685,16 +2685,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\xC4ltereSchwesterAudio"
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 2d6cf3111f138804a9d1d46b7a0931d5, type: 2}
-    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7fabbdd51daeb344089fc65e3526cfa0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2764,6 +2754,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2d6cf3111f138804a9d1d46b7a0931d5, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: 7fabbdd51daeb344089fc65e3526cfa0, type: 3}
@@ -4721,8 +4721,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6024718444657716815, guid: 1ead5e18d61b4a644bc210c3a9903e72, type: 3}
-  - {fileID: -5263828786793135768, guid: 1ead5e18d61b4a644bc210c3a9903e72, type: 3}
+  - {fileID: 2100000, guid: 1e9698e8d353e6e459a93106265b4095, type: 2}
+  - {fileID: 2100000, guid: 1e9698e8d353e6e459a93106265b4095, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4810,7 +4810,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 08272da0fbedec94bb65535aa9eb832d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9ce82352895a1234f83ed938d6270515, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
