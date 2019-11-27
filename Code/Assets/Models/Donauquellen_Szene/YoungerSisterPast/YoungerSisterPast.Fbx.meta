@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b6291f45cb5bc143a4df65f6b7b1c3d
+guid: 6372b81eac1738b4aaa65f727c3fb1bc
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
@@ -20,87 +20,87 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair_Transparency_Tra
-    second: {fileID: 2100000, guid: 9fdf57389152d7544a84ac571b50aef6, type: 2}
+    second: {fileID: 2100000, guid: e21b36872b0967a468a9d73769f41bb7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Jeans_Pbr
-    second: {fileID: 2100000, guid: 7d87ae5149dcb1d4d9f68115125498ea, type: 2}
+    second: {fileID: 2100000, guid: 1c643fcd028f4664d9f370ad64e8a0cc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Lower_Teeth_Pbr
-    second: {fileID: 2100000, guid: d0831ade6455c324397cd5911e6c1027, type: 2}
+    second: {fileID: 2100000, guid: 87ccd184870543e4a954eb5326d697a0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Nike_v1_Lowpoly_Tra
-    second: {fileID: 2100000, guid: eb11a5c2e7c1a40459084bd7d0910d88, type: 2}
+    second: {fileID: 2100000, guid: 08fdfb7b8ef1f9249af053f0c573dc78, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_L_Pbr
-    second: {fileID: 2100000, guid: 30ded2be3f6c0d54faeb82c95f343822, type: 2}
+    second: {fileID: 2100000, guid: cc1661f88f1797b40bcbe8f07072af8c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_R_Pbr
-    second: {fileID: 2100000, guid: 3b135336ec41bfe4f8af09a438dde77f, type: 2}
+    second: {fileID: 2100000, guid: 74a3696dc3625b241a32037a7adba8df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_L_Pbr
-    second: {fileID: 2100000, guid: 417da18ff3cb7c9448977946ff8a69b9, type: 2}
+    second: {fileID: 2100000, guid: 0bdba2a6083f5f94ba96c38f5bdd5f63, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_R_Pbr
-    second: {fileID: 2100000, guid: f490f5f5fee018a498943e199e7b9f29, type: 2}
+    second: {fileID: 2100000, guid: c4dbfcf1e5799cb40988be6ec4542be5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eyelash_Pbr
-    second: {fileID: 2100000, guid: 3dec454adfb934c4084c47b4409f3130, type: 2}
+    second: {fileID: 2100000, guid: f99a4abb34decb7438f21088ce991cca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Nails_Pbr
-    second: {fileID: 2100000, guid: 1361d0d6ce2d13d48a9f203c158023c1, type: 2}
+    second: {fileID: 2100000, guid: f2f0407180d75aa43a6142769494eeea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Arm_Pbr
-    second: {fileID: 2100000, guid: c88f6ee3de10b4d4884863ca90dd3668, type: 2}
+    second: {fileID: 2100000, guid: 0850970d6eeff4b46a1a2878879c7878, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Body_Pbr
-    second: {fileID: 2100000, guid: fc01000ea77239d4d9dfc943bee0e1dc, type: 2}
+    second: {fileID: 2100000, guid: 0978f615c8d84c74ead603e50faaff01, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Head_Pbr
-    second: {fileID: 2100000, guid: f6d52d0f45554f647aaebdce22f7657e, type: 2}
+    second: {fileID: 2100000, guid: 74c8d707646d09642beedc560702af3a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Leg_Pbr
-    second: {fileID: 2100000, guid: e73cc904a7b6d364dbecada013d2a608, type: 2}
+    second: {fileID: 2100000, guid: bd3dcbce230be834d84e80874ef4246c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tongue_Pbr
-    second: {fileID: 2100000, guid: b34407732d856744291364da89a17119, type: 2}
+    second: {fileID: 2100000, guid: 819d498ce38b4784d829e561aec1b067, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Upper_Teeth_Pbr
-    second: {fileID: 2100000, guid: e174f6427ae8b764c9bcee51409f69fe, type: 2}
+    second: {fileID: 2100000, guid: b60b465967907c44b8a9c1cc0b09cc51, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: _2_GOREPORT_1_20_30_Pbr
-    second: {fileID: 2100000, guid: ce83e366af8134546a5762879f657e92, type: 2}
+    second: {fileID: 2100000, guid: b9c003c84b9e39d48a4baaec2ed8564e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -134,7 +134,7 @@ ModelImporter:
     - serializedVersion: 16
       name: 0_T-Pose
       takeName: 0_T-Pose
-      internalID: -7881739814215078984
+      internalID: -8765926809051069468
       firstFrame: 0
       lastFrame: 1037
       wrapMode: 0
@@ -163,7 +163,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Calibration
       takeName: Calibration
-      internalID: 3294320872195724860
+      internalID: -4602846158915492906
       firstFrame: 0
       lastFrame: 1037
       wrapMode: 0
@@ -217,7 +217,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 180
+    normalSmoothAngle: 60
     normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
