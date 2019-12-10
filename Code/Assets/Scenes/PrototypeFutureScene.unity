@@ -1992,7 +1992,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591225464}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d1f1a4dba6ec70242a6fac8c1f055376, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0f2ccb8d495b4f34f8c9f6340e72f9d3, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 693009931}
@@ -2561,7 +2561,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929484297
 MonoBehaviour:
@@ -2583,7 +2583,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: cb2da39db19cfe744986b471947ec1ed, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4644,7 +4644,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 017e334061aae404aa61c8f5235880ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84995a6013c7ec74ca0606b64f2200f3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

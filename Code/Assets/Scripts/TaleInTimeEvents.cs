@@ -59,6 +59,15 @@ public class TaleInTimeEvents : MonoBehaviour
             BrightenOverlay();
         }
 
+        if (logoVideoPlayer.isPlaying)
+        {
+            rawImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            rawImage.gameObject.SetActive(false);
+        }
+
         DrawOverlay();
     }
 
@@ -97,6 +106,7 @@ public class TaleInTimeEvents : MonoBehaviour
             blackOverlay.color = new Color32(0, 0, 0, Convert.ToByte(currentOverlayAlpha));
         }
     }
+
     public void PlayLoadingIcon()
     {
         rawImage.texture = logoVideoPlayer.texture;
