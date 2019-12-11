@@ -51,11 +51,21 @@ public class TaleInTimeEvents : MonoBehaviour
         else
         {
             timer = 0.0f;
+            startOverlayBrightening = true;
         }
 
         if (startOverlayBrightening)
         {
             BrightenOverlay();
+        }
+
+        if (logoVideoPlayer.isPlaying)
+        {
+            rawImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            rawImage.gameObject.SetActive(false);
         }
 
         DrawOverlay();
@@ -71,7 +81,7 @@ public class TaleInTimeEvents : MonoBehaviour
     {
         if (currentOverlayAlpha > 0)
         {
-            currentOverlayAlpha = (int)currentOverlayAlpha - 2;
+            currentOverlayAlpha = (int)currentOverlayAlpha - 1;
             return;
         }
         else
@@ -96,6 +106,7 @@ public class TaleInTimeEvents : MonoBehaviour
             blackOverlay.color = new Color32(0, 0, 0, Convert.ToByte(currentOverlayAlpha));
         }
     }
+
     public void PlayLoadingIcon()
     {
         rawImage.texture = logoVideoPlayer.texture;
