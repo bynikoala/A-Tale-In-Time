@@ -6,6 +6,7 @@ public class AudioTrigger : MonoBehaviour
 {
     AudioSource audioData;
     public TaleInTimeEvents events;
+    ParticleSystem ps;
 
     private bool flagForUnlock;
 
@@ -13,6 +14,7 @@ public class AudioTrigger : MonoBehaviour
     {
         audioData = GetComponent<AudioSource>();
         flagForUnlock = false;
+        ps = GetComponent<ParticleSystem>();
     }
 
     public void PlayAudio()
@@ -20,6 +22,11 @@ public class AudioTrigger : MonoBehaviour
         if(!audioData.isPlaying) {
             audioData.Play(0);
             flagForUnlock = true;
+        }
+
+        if (ps.isEmitting)
+        {
+            ps.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
     }
 
