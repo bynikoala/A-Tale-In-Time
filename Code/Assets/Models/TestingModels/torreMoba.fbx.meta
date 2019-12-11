@@ -3,17 +3,7 @@ guid: 1ead5e18d61b4a644bc210c3a9903e72
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Todo
-    second: {fileID: 2100000, guid: 5372a208be4156247bfdb36c00839600, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: luz
-    second: {fileID: 2100000, guid: 1e9698e8d353e6e459a93106265b4095, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
