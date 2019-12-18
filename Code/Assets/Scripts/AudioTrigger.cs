@@ -6,8 +6,10 @@ public class AudioTrigger : MonoBehaviour
 {
     AudioSource audioData;
     public Animator CharacterAnim;
+    public Animator CharacterAnim2;
     public TaleInTimeEvents events;
     ParticleSystem ps;
+    public int audioDelay;
 
     private bool flagForUnlock;
 
@@ -25,8 +27,10 @@ public class AudioTrigger : MonoBehaviour
             if (CharacterAnim)
             { 
                 CharacterAnim.SetBool("startAni1", true);
+                CharacterAnim2.SetBool("startAni1", true);
+                
             }
-            audioData.PlayDelayed(0);
+            audioData.PlayDelayed(audioDelay);
             
             flagForUnlock = true;
         }
