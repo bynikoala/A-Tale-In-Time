@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioTrigger : MonoBehaviour
 {
     AudioSource audioData;
+    public Animator CharacterAnim;
     public TaleInTimeEvents events;
     ParticleSystem ps;
 
@@ -20,7 +21,9 @@ public class AudioTrigger : MonoBehaviour
     public void PlayAudio()
     {
         if(!audioData.isPlaying) {
-            audioData.Play(0);
+            CharacterAnim.SetBool("startAni1", true);
+            audioData.PlayDelayed(0);
+            
             flagForUnlock = true;
         }
 
