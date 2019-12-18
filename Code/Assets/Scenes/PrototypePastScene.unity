@@ -15013,6 +15013,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4217073846489763648, guid: bde5ea21c9e0feb4f966283c0b2eef52,
+        type: 3}
+      propertyPath: irrlicht2
+      value: 
+      objectReference: {fileID: 7696659439348319879}
+    - target: {fileID: 4217073846489763648, guid: bde5ea21c9e0feb4f966283c0b2eef52,
+        type: 3}
+      propertyPath: irrlicht3
+      value: 
+      objectReference: {fileID: 3195929965131739522}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde5ea21c9e0feb4f966283c0b2eef52, type: 3}
 --- !u!1 &4441937506056595675

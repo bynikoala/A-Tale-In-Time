@@ -3,31 +3,31 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    
-    public void NextScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
-    //TS
-
+    private float timer;
     private Transform cameraTransform;
+    private Vector3 oldEulerAngles;
 
     private void Start()
     {
         cameraTransform = this.GetComponentInParent<Transform>();
+        Input.gyro.enabled = true;
+        timer = 0;
     }
 
     private void Update()
     {
-        //probably completely fucking wrong, but who cares for now x)
-        //if(cameraTransform.rotation.eulerAngles.z >= 180)
-       // {
-       //     NextScene();
-      //  }
+        timer += Time.deltaTime;
+        resetRotation(timer);
+      
+        Vector3 eulerAngles = Input.gyro.attitude.eulerAngles;
+
+        if (eulerAngles.z - oldEulerAngles.z >= 180)
+        {
+            NextScene();
+        }
     }
 
-    private void TestNextScene()
+    private void NextScene()
     {
         Scene scene = SceneManager.GetActiveScene();
 
@@ -38,6 +38,15 @@ public class ChangeScene : MonoBehaviour
         if(scene.name == "PrototypeFutureScene")
         {
             SceneManager.LoadScene("PrototypePastScene");
+        }
+    }
+
+    private void resetRotation(float timer)
+    {
+        if (timer >= 1.5)
+        {
+            oldEulerAngles = this.gameObject.transform.eulerAngles;
+            timer = 0;
         }
     }
 }

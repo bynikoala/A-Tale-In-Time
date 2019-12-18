@@ -20,8 +20,12 @@ public class AudioTrigger : MonoBehaviour
 
     public void PlayAudio()
     {
-        if(!audioData.isPlaying) {
-            CharacterAnim.SetBool("startAni1", true);
+        if (!audioData.isPlaying) {
+
+            if (CharacterAnim)
+            { 
+                CharacterAnim.SetBool("startAni1", true);
+            }
             audioData.PlayDelayed(0);
             
             flagForUnlock = true;
