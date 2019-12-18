@@ -12,11 +12,15 @@ public class TaleInTimeEvents : MonoBehaviour
 
     public RawImage rawImage;
     public VideoPlayer logoVideoPlayer;
+    public RawImage fogImage;
+    public VideoPlayer fogVideoPlayer;
 
     private float timer;
     private bool eventLock;
     private float currentOverlayAlpha;
+    private float fogOverlayAlpha;
     private bool startOverlayBrightening;
+    private bool startFog;
 
 
     // Start is called before the first frame update
@@ -27,6 +31,8 @@ public class TaleInTimeEvents : MonoBehaviour
         eventLock = false;
         startOverlayBrightening = false;
         logoVideoPlayer.Prepare();
+        fogVideoPlayer.Prepare();
+        fogImage.texture = fogVideoPlayer.texture;
     }
 
     // Update is called once per frame
@@ -57,6 +63,15 @@ public class TaleInTimeEvents : MonoBehaviour
         if (startOverlayBrightening)
         {
             BrightenOverlay();
+        }
+
+        if (startFog && fogVideoPlayer.isPlaying)
+        {
+            DarkenFog();
+        }
+        else if(fogVideoPlayer.time >= 3)
+        {
+            BrightenFog();
         }
 
         if (logoVideoPlayer.isPlaying)
@@ -111,6 +126,24 @@ public class TaleInTimeEvents : MonoBehaviour
     {
         rawImage.texture = logoVideoPlayer.texture;
         logoVideoPlayer.Play();
+    }
+
+    public void PlayFog()
+    {
+        startFog = true;
+        fogVideoPlayer.Play();
+    }
+
+    public void DarkenFog()
+    {
+        if(fogOverlayAlpha < 255) { fogOverlayAlpha = (int)fogOverlayAlpha + 5; }
+        
+        fogImage.color = new Color32(0, 0, 0, Convert.ToByte(fogOverlayAlpha));
+    }
+    public void BrightenFog()
+    {
+        if (fogOverlayAlpha > 0) { fogOverlayAlpha = (int)fogOverlayAlpha - 5; }
+        fogImage.color = new Color32(0, 0, 0, Convert.ToByte(fogOverlayAlpha));
     }
 
     private void ActivateTarget()
