@@ -8,7 +8,9 @@ public class IrrlichtPlayer : MonoBehaviour
 {
     private RawImage rawImage;
     private VideoPlayer videPlayer;
-    
+    public RawImage irrlicht2;
+    public RawImage irrlicht3;
+
     void Start()
     {
         rawImage = this.gameObject.GetComponent<RawImage>();
@@ -28,6 +30,8 @@ public class IrrlichtPlayer : MonoBehaviour
         }
 
         rawImage.texture = videPlayer.texture;
+        irrlicht2.texture = videPlayer.texture;
+        irrlicht3.texture = videPlayer.texture;
         videPlayer.Play();
     }
 }
