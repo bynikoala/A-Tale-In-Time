@@ -12213,6 +12213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YoungerSisterPast
       objectReference: {fileID: 0}
+    - target: {fileID: 7068624106107210037, guid: baf111f6403d0d344aa6cd0c070213c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: baf111f6403d0d344aa6cd0c070213c9,
         type: 3}
       propertyPath: m_Controller
@@ -12323,6 +12328,21 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.010903014
       objectReference: {fileID: 0}
+    - target: {fileID: -2651196616417330939, guid: baf111f6403d0d344aa6cd0c070213c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: -2651196616417330939, guid: baf111f6403d0d344aa6cd0c070213c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2651196616417330939, guid: baf111f6403d0d344aa6cd0c070213c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baf111f6403d0d344aa6cd0c070213c9, type: 3}
 --- !u!4 &977233464 stripped
@@ -12331,6 +12351,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 977233463}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &977233465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202175252828305911, guid: baf111f6403d0d344aa6cd0c070213c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 977233463}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &977233466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977233465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8803e614ba102b40afb7339e80a0030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh: {fileID: -5230605303409537392, guid: baf111f6403d0d344aa6cd0c070213c9, type: 3}
 --- !u!1 &1012504904
 GameObject:
   m_ObjectHideFlags: 0
