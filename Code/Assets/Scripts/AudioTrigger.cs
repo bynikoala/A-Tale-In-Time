@@ -27,14 +27,19 @@ public class AudioTrigger : MonoBehaviour
 
             if (CharacterAnim[0])
             {
-                for (int i = 0; i <= CharacterAnim.Length; i++)
+                for (int i = 0; i <= CharacterAnim.Length-1; i++)
                 {
                     CharacterAnim[i].SetBool(animationtrigger, true);                    
                 }
             }
             audioData.PlayDelayed(audioDelay);
-            
+
             flagForUnlock = true;
+        }
+
+        for (int i = 0; i <= CharacterAnim.Length - 1; i++)
+        {
+            CharacterAnim[i].SetBool(animationtrigger, true);
         }
 
         if (ps.isEmitting)
