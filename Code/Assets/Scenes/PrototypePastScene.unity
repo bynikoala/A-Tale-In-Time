@@ -5715,6 +5715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jungegeist_gedenksteinGeist
       objectReference: {fileID: 0}
+    - target: {fileID: 6148067606749721128, guid: a1feef8639d9549459c2d3a22162750e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -9193248767792875324, guid: a1feef8639d9549459c2d3a22162750e,
         type: 3}
       propertyPath: m_IsActive
@@ -5870,11 +5875,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68f42ae403670b04a847ecb5750d5424, type: 2}
-    - target: {fileID: 6148067606749721128, guid: a1feef8639d9549459c2d3a22162750e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1feef8639d9549459c2d3a22162750e, type: 3}
 --- !u!1 &363552803
@@ -6731,7 +6731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8803e614ba102b40afb7339e80a0030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
+  mesh: {fileID: -7271538576714062029, guid: a1feef8639d9549459c2d3a22162750e, type: 3}
 --- !u!1 &866185325
 GameObject:
   m_ObjectHideFlags: 0
