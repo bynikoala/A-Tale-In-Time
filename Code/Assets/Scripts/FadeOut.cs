@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class FadeOut : StateMachineBehaviour
 {
+    
+
+    public string GameObjectName;
+    void OnStateEnter()
+    {   
+        GameObject go = GameObject.Find(GameObjectName);
+        go.GetComponent<fadeCharacter>().fadeOut();
+    }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
@@ -33,19 +41,4 @@ public class FadeOut : StateMachineBehaviour
     //{
     //    // Implement code that sets up animation IK (inverse kinematics)
     //}
-
-    public string GameObjectName;
-    void OnStateEnter()
-    {
-
-        
-
-        GameObject go = GameObject.Find(GameObjectName);
-
-
-        go.GetComponent<fadeCharacter>().fadeOut();
-
-
-
-    }
 }

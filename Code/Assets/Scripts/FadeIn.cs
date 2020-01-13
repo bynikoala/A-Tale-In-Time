@@ -12,7 +12,7 @@ public class FadeIn : StateMachineBehaviour
         GameObject go = GameObject.Find(GameObjectName);
 
 
-      go.GetComponent<fadeCharacter>().fadeIn();
+        go.GetComponent<fadeCharacter>().fadeIn();
 
 
 

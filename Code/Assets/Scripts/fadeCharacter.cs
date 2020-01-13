@@ -6,9 +6,13 @@ public class fadeCharacter : MonoBehaviour
 {
 
 
-    public string[] MaterialCache = new string[100];
-    public int[] RenderCache = new int[100];
-    public GameObject characterGameObject;
+    public string[] MaterialCache;
+    public int[] RenderCache;
+
+    public float opacity;
+    public float waitTimeGhostFadeIn;
+    public float waitTimeGhostFadeOut;
+    GameObject characterGameObject;
 
     public void Start()
     {
@@ -39,10 +43,10 @@ public class fadeCharacter : MonoBehaviour
 
     public void fadeOut()
     {       
-        StartCoroutine(Wait()); 
+        StartCoroutine(WaitFadeOut()); 
     }
 
-    IEnumerator Wait()
+    IEnumerator WaitFadeOut()
     {
         yield return new WaitForSeconds(1);
         Animator current = gameObject.GetComponent<Animator>();
@@ -54,22 +58,35 @@ public class fadeCharacter : MonoBehaviour
        
     }
 
-        public void fadeIn()
-
+    public void fadeIn()
     {
-        
-        iTween.FadeTo(characterGameObject, 1, 2);
+        StartCoroutine(WaitFadeIn());
+    }
+
+    IEnumerator WaitFadeIn()
+    {
+        yield return new WaitForSeconds(2);
+        iTween.FadeTo(characterGameObject, opacity, 2);
         SetMaterialOpaque();
+       
+
     }
 
-
-    private bool IsCharacter(Collider collider)
-
+    public void fadeInGhost()
     {
-        // Implement you logic here if it is your player that is the collider
-        return true;
+        StartCoroutine(WaitFadeInGhost());
     }
 
+    IEnumerator WaitFadeInGhost()
+    {
+        yield return new WaitForSeconds(waitTimeGhostFadeIn);
+        iTween.FadeTo(characterGameObject, opacity, 2);
+        SetMaterialOpaque();
+        yield return new WaitForSeconds(waitTimeGhostFadeOut);
+        iTween.FadeTo(characterGameObject, 0, 2);
+        SetMaterialTransparent();
+
+    }
 
     private void SetMaterialTransparent()
     {
@@ -91,12 +108,12 @@ public class fadeCharacter : MonoBehaviour
                    // MaterialCache[i + j] = m.shader.name;
                     
 
-                    Debug.Log(m.name.ToString());
+                 
                     if (m.name != "Scalp_High_polytail_Transparency_Pbr (Instance)")
                     {
                        // MaterialCache[i + j] = m.shader.name;
                         Shader TransShader = Shader.Find("Transparent/VertexLit with Z");
-                        m.shader = TransShader;
+                       m.shader = TransShader;
                     }
 
                     
@@ -165,27 +182,8 @@ public class fadeCharacter : MonoBehaviour
                 }
             }
         }
-
-
-        void OnTriggerExit(Collider collider)
-
-        {
-
-            if (IsCharacter(collider))
-
-            {
-
-                // Set material to opaque
-
-                iTween.FadeTo(characterGameObject, 1, 1);
-
-
-                Invoke("SetMaterialOpaque", 1.0f);
-
-            }
-
-        }
     }
+    
 }
 
 
