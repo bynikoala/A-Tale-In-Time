@@ -264,7 +264,7 @@ PlayerSettings:
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
-  AndroidEnableTango: 0
+  AndroidEnableTango: 1
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
   androidUseCustomKeystore: 0
@@ -476,7 +476,7 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 0
   - m_BuildTarget: Android
-    m_Enabled: 1
+    m_Enabled: 0
   - m_BuildTarget: iPhone
     m_Enabled: 1
   openGLRequireES31: 0
