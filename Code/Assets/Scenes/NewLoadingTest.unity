@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44971216, g: 0.49978185, b: 0.5756355, a: 1}
+  m_IndirectSpecularColor: {r: 0.44971204, g: 0.4997813, b: 0.57563496, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9899,18 +9899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9baf825140609747b78db971444ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialCache:
-  - Standard
-  - Standard
-  - Standard
-  - 
-  - Standard
-  - Standard
-  - Standard (Specular setup)
-  - Standard
-  - Standard
-  - Standard
-  RenderCache: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   opacity: 1
   waitTimeGhostFadeIn: 0
   waitTimeGhostFadeOut: 0
@@ -15197,6 +15185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jungegeist
       objectReference: {fileID: 0}
+    - target: {fileID: 6148067606749721128, guid: a1feef8639d9549459c2d3a22162750e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -9193248767792875324, guid: a1feef8639d9549459c2d3a22162750e,
         type: 3}
       propertyPath: m_IsActive
@@ -15357,11 +15350,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68f42ae403670b04a847ecb5750d5424, type: 2}
-    - target: {fileID: 6148067606749721128, guid: a1feef8639d9549459c2d3a22162750e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1feef8639d9549459c2d3a22162750e, type: 3}
 --- !u!1 &363552803
@@ -15724,18 +15712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9baf825140609747b78db971444ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialCache:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  RenderCache: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   opacity: 0.2
   waitTimeGhostFadeIn: 20
   waitTimeGhostFadeOut: 19
@@ -21688,7 +21664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693009927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -2.036, y: 1.592, z: 3.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419371732}
@@ -22427,18 +22403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9baf825140609747b78db971444ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialCache:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  RenderCache: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   opacity: 1
   waitTimeGhostFadeIn: 0
   waitTimeGhostFadeOut: 0
@@ -22753,7 +22717,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387985049}
-  m_Mesh: {fileID: 2099928740}
+  m_Mesh: {fileID: 2130016365}
 --- !u!23 &1387985051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22771,7 +22735,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1615769086}
+  - {fileID: 1546998861}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28218,6 +28182,34 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 656163626}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1546998861
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'targetMaterial
+
+    15702'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 012c72f5cb9c4bb2a3e38f7164b6b3f3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1588102493
 GameObject:
   m_ObjectHideFlags: 0
@@ -28328,34 +28320,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1615769086
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'targetMaterial
-
-    17476'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 012c72f5cb9c4bb2a3e38f7164b6b3f3, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1736491366
 GameObject:
   m_ObjectHideFlags: 0
@@ -28907,18 +28871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9baf825140609747b78db971444ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialCache:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  RenderCache: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   opacity: 0.3
   waitTimeGhostFadeIn: 2
   waitTimeGhostFadeOut: 34
@@ -29451,13 +29403,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!43 &2099928740
+--- !u!43 &2130016365
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh17466
+  m_Name: ImageTargetMesh15692
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34921,30 +34873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9baf825140609747b78db971444ee76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialCache:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  RenderCache: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   opacity: 1
   waitTimeGhostFadeIn: 1
   waitTimeGhostFadeOut: 1

@@ -6,8 +6,8 @@ public class fadeCharacter : MonoBehaviour
 {
 
 
-    public string[] MaterialCache;
-    public int[] RenderCache;
+    public string[,] MaterialCache;
+    public int[,] RenderCache;
 
     public float opacity;
     public float waitTimeGhostFadeIn;
@@ -16,6 +16,8 @@ public class fadeCharacter : MonoBehaviour
 
     public void Start()
     {
+        MaterialCache = new string[15, 15];
+        RenderCache = new int[15, 15];
         characterGameObject = this.gameObject;
 
 
@@ -32,8 +34,8 @@ public class fadeCharacter : MonoBehaviour
 
                 foreach (Material m in characterGameObject.transform.GetChild(i).GetComponent<Renderer>().materials)
                 {
-                    MaterialCache[i + j] = m.shader.name;
-                    RenderCache[i + j] = m.renderQueue;
+                    MaterialCache[i,j] = m.shader.name;
+                    RenderCache[i,j] = m.renderQueue;
                     j++;
                 }
             }
@@ -112,7 +114,7 @@ public class fadeCharacter : MonoBehaviour
                     if (m.name != "Scalp_High_polytail_Transparency_Pbr (Instance)")
                     {
                        // MaterialCache[i + j] = m.shader.name;
-                        Shader TransShader = Shader.Find("Transparent/VertexLit with Z");
+                        Shader TransShader = Shader.Find("Custom/Ghost");
                        m.shader = TransShader;
                     }
 
@@ -132,7 +134,7 @@ public class fadeCharacter : MonoBehaviour
 
                     // m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
 
-                    m.renderQueue = RenderCache[i + j];
+                    m.renderQueue = RenderCache[i, j];
 
                     j++;
                 }
@@ -160,7 +162,7 @@ public class fadeCharacter : MonoBehaviour
                 {
 
                     
-                    Shader oldShader = Shader.Find(MaterialCache[i + j]);
+                    Shader oldShader = Shader.Find(MaterialCache[i, j]);
                         m.shader = oldShader;
 
 
@@ -177,7 +179,7 @@ public class fadeCharacter : MonoBehaviour
 
                     //m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
 
-                    m.renderQueue = RenderCache[i + j];
+                    m.renderQueue = RenderCache[i, j];
                     j++;
                 }
             }
