@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioTrigger : MonoBehaviour
 {
-    AudioSource audioData;
+    AudioSource[] audioData;
     public Animator[] CharacterAnim;
     public string animationtrigger;
    
@@ -16,14 +16,14 @@ public class AudioTrigger : MonoBehaviour
 
     private void Awake()
     {
-        audioData = GetComponent<AudioSource>();
+        audioData = GetComponents<AudioSource>();
         flagForUnlock = false;
         ps = GetComponent<ParticleSystem>();
     }
 
     public void PlayAudio()
     {
-        if (!audioData.isPlaying) {
+        if (!audioData[0].isPlaying) {
 
             if (CharacterAnim[0])
             {
@@ -32,7 +32,9 @@ public class AudioTrigger : MonoBehaviour
                     CharacterAnim[i].SetBool(animationtrigger, true);                    
                 }
             }
-            audioData.PlayDelayed(audioDelay);
+            foreach(AudioSource audioClip in audioData) {
+                audioClip.PlayDelayed(audioDelay);
+            }
 
             flagForUnlock = true;
         }
@@ -50,8 +52,8 @@ public class AudioTrigger : MonoBehaviour
 
     private void Update()
     {
-        audioData = GetComponent<AudioSource>();
-        if (flagForUnlock && !audioData.isPlaying)
+        audioData = GetComponents<AudioSource>();
+        if (flagForUnlock && !audioData[0].isPlaying)
         {
             Debug.Log("Events Unlocked by Audio Trigger on " + this.gameObject.name);
             events.UnlockEvents();
