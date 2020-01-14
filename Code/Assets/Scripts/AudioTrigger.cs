@@ -41,7 +41,7 @@ public class AudioTrigger : MonoBehaviour
 
         for (int i = 0; i <= CharacterAnim.Length - 1; i++)
         {
-            CharacterAnim[i].SetBool(animationtrigger, true);
+            CharacterAnim[i].SetTrigger(animationtrigger);
         }
 
         if (ps.isEmitting)
