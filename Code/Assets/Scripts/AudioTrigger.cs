@@ -25,7 +25,7 @@ public class AudioTrigger : MonoBehaviour
     {
         if (!audioData[0].isPlaying) {
 
-            if (CharacterAnim[0])
+            if (CharacterAnim.Length > 0)
             {
                 for (int i = 0; i <= CharacterAnim.Length-1; i++)
                 {
@@ -65,7 +65,7 @@ public class AudioTrigger : MonoBehaviour
     {
         while (audioData[0].isPlaying)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.2f);
         }
 
         flagForUnlock = true;

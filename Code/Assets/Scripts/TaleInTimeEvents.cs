@@ -17,7 +17,8 @@ public class TaleInTimeEvents : MonoBehaviour
 
     private float timer;
     private bool eventLock;
-    private float currentOverlayAlpha;
+    private int currentOverlayAlpha;
+    private int overlayAlphaSave;
     private float fogOverlayAlpha;
     private bool startOverlayBrightening;
     private bool startFog;
@@ -59,18 +60,10 @@ public class TaleInTimeEvents : MonoBehaviour
             startOverlayBrightening = true;
         }
 
-        if (startOverlayBrightening)
+        if (startOverlayBrightening && !eventLock)
         {
+            overlayAlphaSave = currentOverlayAlpha;
             StartCoroutine("BrightenOverlay");
-        }
-
-        if (startFog && fogVideoPlayer.isPlaying)
-        {
-            DarkenFog();
-        }
-        else if(fogVideoPlayer.time >= 1)
-        {
-            BrightenFog();
         }
 
         if (logoVideoPlayer.isPlaying)
@@ -93,28 +86,24 @@ public class TaleInTimeEvents : MonoBehaviour
 
     IEnumerator BrightenOverlay()
     {
-        while (currentOverlayAlpha > 0)
+        for (int i = 0; i < overlayAlphaSave; i++)
         {
             currentOverlayAlpha = currentOverlayAlpha - 1;
-            yield return null;
+            yield return new WaitForSeconds(.1f);
         }
+
+        startOverlayBrightening = false;
     }
 
     public void DarkenOverlay()
     {
-        currentOverlayAlpha = timer / waitTime * 200;
+        currentOverlayAlpha = (int) (timer / waitTime * 200);
     }
 
     public void DrawOverlay()
     {
-        if (eventLock)
-        {
-            blackOverlay.color = new Color32(0, 0, 0, 160);
-        }
-        else
-        {
             blackOverlay.color = new Color32(0, 0, 0, Convert.ToByte(currentOverlayAlpha));
-        }
+        
     }
 
     public void PlayLoadingIcon()
