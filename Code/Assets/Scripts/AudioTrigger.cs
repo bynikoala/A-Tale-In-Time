@@ -35,8 +35,6 @@ public class AudioTrigger : MonoBehaviour
             foreach(AudioSource audioClip in audioData) {
                 audioClip.PlayDelayed(audioDelay);
             }
-
-            flagForUnlock = true;
         }
 
         for (int i = 0; i <= CharacterAnim.Length - 1; i++)
@@ -48,6 +46,8 @@ public class AudioTrigger : MonoBehaviour
         {
             ps.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
+
+        StartCoroutine("CheckForUnlock");
     }
 
     private void Update()
@@ -59,5 +59,15 @@ public class AudioTrigger : MonoBehaviour
             events.UnlockEvents();
             flagForUnlock = false;
         }
+    }
+
+    IEnumerator CheckForUnlock()
+    {
+        while (audioData[0].isPlaying)
+        {
+            yield return new WaitForSeconds(.1f);
+        }
+
+        flagForUnlock = true;
     }
 }
