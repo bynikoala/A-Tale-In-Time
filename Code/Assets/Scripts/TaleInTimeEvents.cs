@@ -61,7 +61,7 @@ public class TaleInTimeEvents : MonoBehaviour
 
         if (startOverlayBrightening)
         {
-            BrightenOverlay();
+            StartCoroutine("BrightenOverlay");
         }
 
         if (startFog && fogVideoPlayer.isPlaying)
@@ -91,16 +91,12 @@ public class TaleInTimeEvents : MonoBehaviour
         startOverlayBrightening = true;
     }
 
-    public void BrightenOverlay()
+    IEnumerator BrightenOverlay()
     {
-        if (currentOverlayAlpha > 1)
+        while (currentOverlayAlpha > 0)
         {
-            currentOverlayAlpha = (int)currentOverlayAlpha - 1;
-            return;
-        }
-        else
-        {
-            startOverlayBrightening = false;
+            currentOverlayAlpha = currentOverlayAlpha - 1;
+            yield return null;
         }
     }
 
