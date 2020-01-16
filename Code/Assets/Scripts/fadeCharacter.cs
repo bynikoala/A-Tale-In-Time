@@ -107,25 +107,30 @@ public class fadeCharacter : MonoBehaviour
                 //Debug.Log(characterGameObject.name.ToString());
                 foreach (Material m in characterGameObject.transform.GetChild(i).transform.GetComponent<Renderer>().materials)
                 {
-                   // MaterialCache[i + j] = m.shader.name;
-                    
+                    // MaterialCache[i + j] = m.shader.name;
 
-                 
+
+
                     if (m.name != "Scalp_High_polytail_Transparency_Pbr (Instance)")
                     {
-                       // MaterialCache[i + j] = m.shader.name;
+                        // MaterialCache[i + j] = m.shader.name;
                         Shader TransShader = Shader.Find("Custom/Ghost");
-                       m.shader = TransShader;
+                        m.shader = TransShader;
+
+                    }
+                    if (m.name != "Std_Eyelash_Pbr (Instance)")
+                    { 
+                        m.renderQueue = 2000;
                     }
 
-                    
-
-                        m.SetFloat("_Mode", 2);
+                    m.SetFloat("_Mode", 2);
 
                         m.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
 
                         m.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
 
+                       
+                      
                     //  m.SetInt("_ZWrite", 0);
 
                     //  m.DisableKeyword("_ALPHATEST_ON");
@@ -134,7 +139,7 @@ public class fadeCharacter : MonoBehaviour
 
                     // m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
 
-                    m.renderQueue = RenderCache[i, j];
+                   // m.renderQueue = RenderCache[i, j];
 
                     j++;
                 }
@@ -160,8 +165,7 @@ public class fadeCharacter : MonoBehaviour
 
                 foreach (Material m in characterGameObject.transform.GetChild(i).GetComponent<Renderer>().materials)
                 {
-
-                    
+                  
                     Shader oldShader = Shader.Find(MaterialCache[i, j]);
                         m.shader = oldShader;
 
