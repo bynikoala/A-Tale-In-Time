@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ActivateMe : MonoBehaviour
 {
-    public GameObject littleGhost;
+    public GameObject wantedPoster;
 
     public void ActivateObject()
     {
-        littleGhost.SetActive(true);
+        wantedPoster.SetActive(true);
     }
 }

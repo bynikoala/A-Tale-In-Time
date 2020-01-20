@@ -20,7 +20,7 @@ public class VideoTrigger : MonoBehaviour
         if(!videoPlayer.isPlaying)
         {
             targetImage.texture = videoPlayer.texture;
-             videoPlayer.Play();
+            videoPlayer.Play();
             StartCoroutine("KeepAlphaOn");
         }
     }
