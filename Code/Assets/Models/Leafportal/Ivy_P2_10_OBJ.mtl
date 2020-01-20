@@ -1,0 +1,34 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 11.01.2018 12:37:38
+
+newmtl Branch_material
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.500000 0.500000 0.500000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\Ecleposs Branch2.jpg
+	map_Kd F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\Ecleposs Branch2.jpg
+
+newmtl Leaf_material
+	Ns 25.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588235 0.588235 0.588235
+	Kd 0.588235 0.588235 0.588235
+	Ks 0.378000 0.378000 0.378000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf02.png
+	map_Kd F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf02.png
+	map_d F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf_opacity.png
+	map_bump F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf_normal.png
+	bump F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf_normal.png
+	map_refl F:\Work\00 Squid io\00 TurboSquid Products\Ivy Saga\P2\Ivy_P2_02\leaf_refl.png
