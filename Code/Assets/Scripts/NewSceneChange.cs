@@ -13,7 +13,8 @@ public class NewSceneChange : MonoBehaviour
     public TaleInTimeEvents eventsystem;
     private void OnTriggerEnter(Collider other)
     {
-        eventsystem.PlayFog();
+        //eventsystem.PlayFog();
+        Handheld.Vibrate();
 
         if (futureScene.activeSelf)
         {

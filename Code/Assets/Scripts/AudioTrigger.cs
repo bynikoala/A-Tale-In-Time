@@ -18,7 +18,6 @@ public class AudioTrigger : MonoBehaviour
     {
         audioData = GetComponents<AudioSource>();
         flagForUnlock = false;
-        ps = GetComponent<ParticleSystem>();
     }
 
     public void PlayAudio()
@@ -40,11 +39,6 @@ public class AudioTrigger : MonoBehaviour
         for (int i = 0; i <= CharacterAnim.Length - 1; i++)
         {
             CharacterAnim[i].SetTrigger(animationtrigger);
-        }
-
-        if (ps.isEmitting)
-        {
-            ps.Stop(true, ParticleSystemStopBehavior.StopEmitting);
         }
 
         StartCoroutine("CheckForUnlock");

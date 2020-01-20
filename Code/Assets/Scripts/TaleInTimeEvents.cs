@@ -153,6 +153,12 @@ public class TaleInTimeEvents : MonoBehaviour
                 {
                     hitReciever2.ActivateObject();
                 }
+
+                var hitReciever3 = hit.collider.gameObject.GetComponent<VideoTrigger>();
+                if (hitReciever3 != null)
+                {
+                    hitReciever3.PlayVideo();
+                }
             }
         }
     }
