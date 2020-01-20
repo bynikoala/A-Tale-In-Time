@@ -7,6 +7,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 /// <summary>
@@ -81,6 +82,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     #endregion // PUBLIC_METHODS
 
+    #region ATIT_Variables
+
+    public Text errorText;
+
+    #endregion
+
     #region PROTECTED_METHODS
 
     protected virtual void OnTrackingFound()
@@ -102,6 +109,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+
+
+            Handheld.Vibrate();
+            errorText.gameObject.SetActive(false);
         }
     }
 
@@ -125,6 +136,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
+
+            errorText.gameObject.SetActive(true);
         }
     }
 

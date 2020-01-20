@@ -44,6 +44,7 @@ public class TaleInTimeEvents : MonoBehaviour
             {
                 Debug.Log("Wait Completed");
                 ActivateTarget();
+                Handheld.Vibrate();
                 timer = 0.0f;
                 PlayLoadingIcon();
                 eventLock = true;
